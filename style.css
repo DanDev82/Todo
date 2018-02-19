@@ -1,0 +1,94 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+:root {
+  --primary-txt: #484848;
+  --light-blue-txt: #637a91;
+  --light-txt: #fff;
+  --btn-color: #508abc;
+  --teal-color: #52bab3;
+  --grey-txt: #768da3;
+}
+
+body {
+  color: var(--primary-txt);
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  padding: .45em 2.65em 3em;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+h1 + p {
+  font-size: 1.08em;
+  color: var(--light-blue-txt);
+  margin-top: .5em;
+  margin-bottom: 2.65em;
+  padding-bottom: 1.325em;
+  border-bottom: 1px dotted;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: .45em .5em;
+  margin-bottom: .35em;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+input,
+button {
+  font-size: .85em;
+  padding: .65em 1em;
+  border-radius: .3em;
+  outline: 0;
+}
+div {
+  margin-top: 2.8em;
+  padding: 1.5em 0 .5em;
+  border-top: 1px dotted var(--light-blue-txt);
+}
+p.description,
+p:nth-child(2) {
+  font-weight: bold;
+}
+button {
+  color: var(--light-txt);
+  background: var(--btn-color);
+  border: solid 1px;
+  border-color: rgba(0,0,0,.1);
+  cursor: pointer;
+}
+button + button {
+  margin-left: .5em;
+}
+p + button {
+  background: var(--teal-color);
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+@media screen and (max-width: 700px){
+  button {
+    width: 100%;
+  }
+  input {
+    width: 90%;
+  }
+  button + button {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  input + button {
+    margin-top: 20px;
+  }
+  .container {
+    width: 100%;
+  }
+}
